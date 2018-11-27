@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #666;
+}
+
+/* --Global-- */
+span,
+h2 {
+    font-family: 'Sedgwick Ave', cursive;
+
+}
+
+h5 {
+    text-align: left;
+    padding-left: 100px !important;
+    text-decoration-line: underline;
+
+}
+
+/* --Images & making the parallex effect-- */
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img1 {
+    background-image: url('../dist/images/showcase.jpg');
+    min-height: 100%;
+}
+
+.img2 {
+    background-image: url('../dist/images/idea.jpg');
+    min-height: 600px;
+}
+
+.img3 {
+    background-image: url('../dist/images/people.jpg');
+    min-height: 600px;
+}
+
+.img4 {
+    background-image: url('../dist/images/war.jpg');
+    min-height: 600px;
+}
+
+.img5 {
+    background-image: url('../dist/images/world.jpg');
+    min-height: 600px;
+}
+
+/* --header & 'footer' text on image */
+.text {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sectext {
+    position: absolute;
+    top: 34%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* --Section style-- */
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.idea {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.people {
+    background-color: #F1AD5C;
+    color: #666;
+}
+
+.war {
+    background-color: #2F3A40;
+    color: #fff;
+}
+
+.present {
+    background-color: #191A46;
+    color: #fff;
+}
+
+
+/* --Responsive-- */
+@media (max-width:568px) {
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
+        background-attachment: scroll;
+    }
+}
